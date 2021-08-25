@@ -18,8 +18,8 @@ import org.thymeleaf.extras.springsecurity5.dialect.SpringSecurityDialect;
 public class WebConfig implements WebMvcConfigurer
 {   
 	
-	@Autowired
-    private MessageSource messageSource;
+//	@Autowired
+//    private MessageSource messageSource;
 
 	@Override
 	public void addViewControllers(ViewControllerRegistry registry)
@@ -38,8 +38,8 @@ public class WebConfig implements WebMvcConfigurer
 //        return factory;
 //    }
 //
-    @Bean
-	public SpringSecurityDialect securityDialect() {
-	    return new SpringSecurityDialect();
-	}
+//    @Bean
+//	public SpringSecurityDialect securityDialect() {
+//	    return new SpringSecurityDialect();
+//	}
 }
