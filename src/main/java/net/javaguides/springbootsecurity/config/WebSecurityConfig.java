@@ -64,19 +64,19 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
             	.deleteCookies("my-remember-me-cookie")
                 .permitAll()
                 .and()
-             .rememberMe()
-             	//.key("my-secure-key")
-             	.rememberMeCookieName("my-remember-me-cookie")
-             	.tokenRepository(persistentTokenRepository())
-             	.tokenValiditySeconds(24 * 60 * 60)
-             	.and()
+//             .rememberMe()
+//             	//.key("my-secure-key")
+//             	.rememberMeCookieName("my-remember-me-cookie")
+//             	.tokenRepository(persistentTokenRepository())
+//             	.tokenValiditySeconds(24 * 60 * 60)
+//             	.and()
             .exceptionHandling()
              	;
     }
     
-    PersistentTokenRepository persistentTokenRepository(){
-    	JdbcTokenRepositoryImpl tokenRepositoryImpl = new JdbcTokenRepositoryImpl();
-    	tokenRepositoryImpl.setDataSource(dataSource);
-    	return tokenRepositoryImpl;
-    }
+//    PersistentTokenRepository persistentTokenRepository(){
+//    	JdbcTokenRepositoryImpl tokenRepositoryImpl = new JdbcTokenRepositoryImpl();
+//    	tokenRepositoryImpl.setDataSource(dataSource);
+//    	return tokenRepositoryImpl;
+//    }
 }
